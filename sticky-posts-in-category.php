@@ -2,14 +2,14 @@
 /**
  * @package Sticky Posts In Category
  * @author Ryann Micua
- * @version 2.0
+ * @version 2.1
  *
  * Plugin Name: Sticky Posts In Category
  * Plugin URL: http://pogidude.com/plugins/sticky-posts-in-category-pages-plugin/
  * Description: Shows sticky posts on top of Category pages
  * Author: Ryann Micua
  * Author URI: http://pogidude.com/about/
- * Version: 2.0
+ * Version: 2.1
  * License: GPLv2
  */
  
@@ -19,7 +19,7 @@ class PD_StickyPostsInCategory{
 	}
 	
 	function __construct(){
-		define( 'PD_SPIC_VERSION', '2.0' );
+		define( 'PD_SPIC_VERSION', '2.1' );
 		//e.g. /var/www/example.com/wordpress/wp-content/plugins/exit-crusher
 		define( "PD_SPIC_DIR", plugin_dir_path( __FILE__ ) );
 		//e.g. exit-crusher/exit-crusher.php
