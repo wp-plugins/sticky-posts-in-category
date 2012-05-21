@@ -26,6 +26,7 @@ class PD_StickyPostsInCategory{
 		define( "PD_SPIC_BASENAME", plugin_basename( __FILE__ ) );
 		
 		add_filter('the_posts', array( $this, 'putStickyOnTop' ) );
+		add_filter('post_class', array( $this, 'addStickyClass' ),10,3 );
 	}
 	
 	function putStickyOnTop( $posts ){
@@ -82,6 +83,13 @@ class PD_StickyPostsInCategory{
 		}
 		
 		return $posts;
+	}
+	
+	function addStickyClass( $classes, $class, $post_id ){
+		if( is_sticky() && is_category() && !isset( $classes['sticky'] ) ){
+			$classes[] = 'sticky';
+		}
+		return $classes;
 	}
 	
 	function activate(){

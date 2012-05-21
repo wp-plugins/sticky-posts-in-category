@@ -5,7 +5,7 @@ Donate link: http://pogidude.com/donate/
 Tags: sticky, stickies, sticky posts, sticky post in category, category, post
 Requires at least: 2.9
 Tested up to: 3.3.1
-Stable tag: 2.0
+Stable tag: 2.1
 
 Shows sticky posts on top of category pages like how it is with the main blog index.
 
@@ -27,16 +27,22 @@ There are no options to configure.
 
 == Changelog ==
 
+= 2.1 =
+* Added "sticky" post class to sticky posts. Only affects posts in category.
+
+= 2.0 =
+* Fixed php error when running plugin on pre-3.3 versions of WordPress
+
 = 1.0 =
 * Original Version.
 
+== Upgrade Notice ==
+
+= 2.1 =
+* Added "sticky" post class to sticky posts. Only affects posts in category.
+
 = 2.0 =
 * Fixed php error when running plugin on pre-3.3 versions of WordPress
-
-== Upgrade Notice ==
 
 = 1.0 =
 Original Version
-
-= 2.0 =
-* Fixed php error when running plugin on pre-3.3 versions of WordPress
